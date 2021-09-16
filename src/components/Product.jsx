@@ -1,12 +1,24 @@
 import React from "react";
 import classes from "./Product.module.css";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "../theme.css";
 
-const Product = ({ title, price, artist, front, back }) => {
+const addToCart = (e) => {
+  e.preventDefault();
+};
+const Product = ({ id, title, price, artist, front, back }) => {
   return (
     <div className={classes.productWrapper}>
-      <div className={classes.image}>
+      <Carousel
+        showStatus={false}
+        showIndicators={false}
+        showArrows={true}
+        className={classes.image}
+      >
         <img src={`/coins/${front}`} alt="coin" />
-      </div>
+        <img src={`/coins/${back}`} alt="coin" />
+      </Carousel>
       <div className={classes.details}>
         <div className={classes.titleAuthor}>
           <p className={classes.author}>Artist - {artist}</p>
@@ -14,7 +26,17 @@ const Product = ({ title, price, artist, front, back }) => {
         </div>
         <div className={classes.priceAndAdd}>
           <p className={classes.price}>{price}</p>
-          <button className={classes.cartButton}>ADD TO CART</button>
+          <button
+            className={`snipcart-add-item ${classes.cartButton}`}
+            data-item-id={title}
+            data-item-price={price.slice(1)}
+            data-item-url="https://artmint.com/"
+            data-item-description="High-quality gold products"
+            data-item-image={`/coins/${front}`}
+            data-item-name={title}
+          >
+            ADD TO CART
+          </button>
         </div>
       </div>
     </div>

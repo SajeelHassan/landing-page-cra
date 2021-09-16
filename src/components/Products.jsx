@@ -5,36 +5,36 @@ import Product from "./Product";
 const MY_PRODUCTS = [
   {
     title: "Chuck 24k Gold",
-    front: "Chuck-24kgold-front-1.jpg",
-    back: "chuck-24kgold-back-1.jpg",
+    front: "chuck-24kgold-back-1.jpg",
+    back: "Chuck-24kgold-front-1.jpg",
     price: "$6000",
     artist: "Chuck",
   },
   {
     title: "Chuck Plated 1",
-    front: "Chuck-plated-front-1.jpg",
-    back: "Chuck-plated-back-1.jpg",
+    front: "Chuck-plated-back-1.jpg",
+    back: "Chuck-plated-front-1.jpg",
     price: "$6000",
     artist: "Chuck",
   },
   {
     title: "Chuck Plated 2",
-    front: "Chuck-plated-front-2.jpg",
-    back: "Chuck-plated-back-2.jpg",
+    front: "Chuck-plated-back-2.jpg",
+    back: "Chuck-plated-front-2.jpg",
     price: "$6000",
     artist: "Chuck",
   },
   {
     title: "Chuck Silver 1",
-    front: "Chuck-silver-front-1.jpg",
-    back: "Chuck-silver-back-1.jpg",
+    front: "Chuck-silver-back-1.jpg",
+    back: "Chuck-silver-front-1.jpg",
     price: "$6000",
     artist: "Chuck",
   },
   {
     title: "Chuck Silver 2",
-    front: "Chuck-silver-front-2.jpg",
-    back: "Chuck-silver-back-2.jpg",
+    front: "Chuck-silver-back-2.jpg",
+    back: "Chuck-silver-front-2.jpg",
     price: "$6000",
     artist: "Chuck",
   },
@@ -105,9 +105,11 @@ const MY_PRODUCTS = [
 const Products = () => {
   return (
     <div className={classes.container}>
-      {MY_PRODUCTS.map((prod) => (
+      {MY_PRODUCTS.map((prod, index) => (
         <div className={classes.product}>
           <Product
+            key={index}
+            id={index}
             title={prod.title}
             price={prod.price}
             front={prod.front}

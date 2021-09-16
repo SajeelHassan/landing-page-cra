@@ -41,7 +41,20 @@
   display: flex;
   align-items: center;
 }
-.leftNav li {
+.leftNav li,
+.rightNav li {
   margin: 0 1rem;
   padding: 10px;
+}
+.rightNav > li {
+  font-size: 24px;
+  cursor: pointer;
+  /* width: 100%; */
+  /* background-color: green; */
+  /* width: 300px; */
+  display: flex;
+  justify-content: space-between;
+}
+.rightNav > li:hover {
+  color: rgb(27, 180, 27);
 }

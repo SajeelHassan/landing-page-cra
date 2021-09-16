@@ -1,0 +1,18 @@
+.thumbs-wrapper {
+  margin: 0 !important;
+}
+.thumbs {
+  text-align: center;
+  margin: 10px auto !important;
+  padding: 0 !important;
+}
+
+.thumb {
+  width: 2.8125rem !important;
+}
+.thumb:hover {
+  border: 1px solid rgba(0, 0, 0, 0.465) !important;
+}
+.thumb.selected {
+  border: 1px solid black !important;
+}

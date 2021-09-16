@@ -18,6 +18,7 @@ const CarouselDiv = () => {
           showStatus={false}
           centerMode
           centerSlidePercentage={100}
+          showThumbs={false}
           className={classes.mainCarousel}
         >
           <div className={classes.carouselItem}>
