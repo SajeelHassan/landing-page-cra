@@ -1,0 +1,47 @@
+.headerWrapper {
+  background-color: white;
+  box-shadow: 0px 1.1px 0.8px rgba(0, 0, 0, 0.02),
+    0px 2.7px 1.9px rgba(0, 0, 0, 0.028), 0px 5px 3.6px rgba(0, 0, 0, 0.035),
+    0px 8.9px 6.5px rgba(0, 0, 0, 0.042), 0px 16.7px 12.1px rgba(0, 0, 0, 0.05),
+    0px 40px 29px rgba(0, 0, 0, 0.07);
+}
+.headerMain {
+  margin: 0 auto;
+  max-width: 78.75rem;
+  padding: 0 1.875rem;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo > img {
+  max-width: 150px;
+}
+.navbar ul {
+  margin: 0;
+}
+.navbar li {
+  font-weight: bold;
+  list-style: none;
+  color: #a29c9c;
+  transition: all 0.5s ease-in;
+}
+.leftNav li:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #ff0000;
+}
+.navbar {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.leftNav {
+  display: flex;
+  align-items: center;
+}
+.leftNav li {
+  margin: 0 1rem;
+  padding: 10px;
+}

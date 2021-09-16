@@ -1,0 +1,26 @@
+.carouselWrapper {
+  margin: 24px auto;
+  /* background-color: aqua; */
+}
+.carouselImg {
+  margin: 0 auto;
+  max-width: 1260;
+}
+.sectionCarousel {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* background-color: black; */
+}
+.carouselItem img {
+  width: 75rem;
+  height: 31.25rem;
+  object-fit: "cover";
+}
+.carouselImage {
+  width: 75rem;
+  height: 31.25rem;
+  /* width: 100%; */
+}
+.carouselWrapper {
+  /* background-color: green; */
+}
