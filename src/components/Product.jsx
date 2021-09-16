@@ -27,7 +27,7 @@ const Product = ({ id, title, price, artist, front, back }) => {
             className={`snipcart-add-item ${classes.cartButton}`}
             data-item-id={title}
             data-item-price={price.slice(1)}
-            data-item-url="https://artmint.com/"
+            data-item-url="/"
             data-item-description="High-quality gold products"
             data-item-image={`/coins-small/${front}`}
             data-item-name={title}
