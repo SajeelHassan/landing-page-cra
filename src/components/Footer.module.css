@@ -33,3 +33,17 @@
   margin: 0;
   margin-top: 10px;
 }
+
+@media (max-width: 440px) {
+  .footerWrap {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .copyright {
+    margin-top: 1.5rem;
+  }
+  .info {
+    align-items: center;
+  }
+}

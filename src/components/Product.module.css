@@ -72,3 +72,8 @@
   background-color: white;
   color: #daa805;
 }
+@media (max-width: 380px) {
+  .productWrapper {
+    width: 250px;
+  }
+}

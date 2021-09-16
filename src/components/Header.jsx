@@ -10,11 +10,11 @@ const Header = () => {
           <img src={logo} alt="artmint.com" />
         </div>
         <div className={classes.navbar}>
-          <ul className={classes.leftNav}>
+          {/* <ul className={classes.leftNav}>
             <li>ARTISTS</li>
             <li>GOLD MINE</li>
             <li>GALLERY</li>
-          </ul>
+          </ul> */}
           <ul className={classes.rightNav}>
             <li className="snipcart-checkout">
               <FaCartPlus />
